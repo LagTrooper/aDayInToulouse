@@ -1,58 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-  background-color: #E7ECEF;
-  width:100%;
+body {
+  background-color: #e7ecef;
+  width: 100%;
 }
 ::-webkit-scrollbar-track {
-    background: coral;
+  background: coral;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
-::selection{
-  background: rgb(0,123,255,0.3);
+::selection {
+  background: rgb(0, 123, 255, 0.3);
 }
-.content{
+.content {
   max-width: 1550px;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding:10px;
+  padding: 10px;
   transition: 0.6s;
 }
-.navbar.sticky{
-  background:coral;
-  padding: 10px;;
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+.navbar.sticky {
+  background: coral;
+  padding: 10px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.navbar .content{
+.navbar .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.logo img{
+.logo img {
   width: 170px;
   margin: 0;
   padding-top: 15px;
 }
-.navbar .menu-list{
+.navbar .menu-list {
   display: inline-flex;
 }
-.menu-list li{
+.menu-list li {
   list-style: none;
 }
-.menu-list li a{
+.menu-list li a {
   color: #fff;
   font-size: 25px;
   font-weight: 500;
@@ -61,64 +61,64 @@ body{
   text-decoration: none;
   transition: 0.6s;
 }
-.menu-list li a:hover{
-  color:black;
+.menu-list li a:hover {
+  color: black;
 }
-.banner{
-  background-image: url("/images/capitole.jpg");
+.banner {
+  background-image: url('../images/capitole.jpg');
   height: 70vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-.about{
+.about {
   padding: 30px 0;
 }
-.about .title{
+.about .title {
   font-size: 38px;
   font-weight: 700;
 }
-.about p{
+.about p {
   padding-top: 20px;
   text-align: justify;
 }
-.icon{
+.icon {
   color: #fff;
   font-size: 35px;
   cursor: pointer;
   display: none;
 }
-.menu-list .cancel-btn{
+.menu-list .cancel-btn {
   position: absolute;
   right: 30px;
   top: 20px;
 }
 @media (max-width: 2000px) {
-  .content{
-    padding:0 60px;
+  .content {
+    padding: 0 60px;
   }
 }
 @media (max-width: 1100px) {
-  .content{
+  .content {
     padding: 0 40px;
   }
 }
 @media (max-width: 900px) {
-  .content{
+  .content {
     padding: 0 30px;
   }
 }
 @media (max-width: 825px) {
-  body.disabled{
+  body.disabled {
     overflow: hidden;
   }
-  .icon{
+  .icon {
     display: block;
   }
-  .icon.hide{
+  .icon.hide {
     display: none;
   }
-  .navbar .menu-list{
+  .navbar .menu-list {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -128,26 +128,26 @@ body{
     display: block;
     padding: 40px 0;
     text-align: center;
-    background:coral;
+    background: coral;
     transition: all 0.6s ease;
   }
-  .navbar.show .menu-list{
+  .navbar.show .menu-list {
     left: 0%;
   }
-  .navbar .menu-list li{
+  .navbar .menu-list li {
     margin-top: 45px;
   }
-  .navbar .menu-list li a{
+  .navbar .menu-list li a {
     font-size: 23px;
     margin-left: -100%;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  .navbar.show .menu-list li a{
+  .navbar.show .menu-list li a {
     margin-left: 0px;
   }
 }
 @media (max-width: 380px) {
-  .navbar .logo a{
+  .navbar .logo a {
     font-size: 27px;
   }
 }
